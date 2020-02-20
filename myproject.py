@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load the data
 df = pd.read_csv('data/WA_Fn-UseC_-HR-Employee-Attrition.csv')
-df.drop('EmployeeCount', axis=1, inplace=True) # Column has no relevant info
+df.drop('EmployeeCount', axis=1, inplace=True)        # Column has no relevant info
 
 # Print info and summary stats
 print(f'Info and description of dataset:\n')
@@ -26,4 +26,3 @@ print(f'Printing the correlations. There are two many columns to fit on the scre
       f'to pandas display settings.\n')
 print(df.corr().dropna(how='all'))
 print(f'------------------------------------------------------------\n\n')
-
