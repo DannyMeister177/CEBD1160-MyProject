@@ -28,16 +28,14 @@ Your repository should include the following:
 - action (how will we try to solve this problem/answer this question)
 - resolution (what did we end up producing)
 
-
+Predicting employee flight is a principal concern of Human Resource departments as it is typically very costly to replace employees. According to [this article](https://www.peoplekeep.com/blog/bid/312123/employee-retention-the-real-cost-of-losing-an-employee), the average cost to replace an employee is "20 percent of annual salary for midrange positions (earning $30,000 to $50,000 a year). For example, the cost to replace a $40k manager would be $8,000." according to one study. Using the dataset which has fictional employee data along with attrition I attempted to determine which factors can help predict employee flight. I found it very challenging as the data is significantly imbalanced (only 16% of employees left) and so <b><i>RESULT TBD</i></b>
 
 ### Introduction
 
 Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
 
-This is a fictional dataset created by IBM Data Scientists found on Kaggle and can be found [here](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset). 
-It holds 1470 employee records with various HR factors such as compensation, Demographics
-, Measures of environmental satisfaction, performance, work experience, and more. We can use this
- data to create a model to identify important factors that can predict employee flight which is a principal concern of Human Resource departments as it is typically very costly to replace employees. According to [this article](https://www.peoplekeep.com/blog/bid/312123/employee-retention-the-real-cost-of-losing-an-employee), the average cost to replace an employee is "20 percent of annual salary for midrange positions (earning $30,000 to $50,000 a year). For example, the cost to replace a $40k manager would be $8,000." according to one study.
+This is a fictional dataset created by IBM Data Scientists found on can be found on [Kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset). 
+It holds 1470 employee records with various HR factors such as compensation, Demographics , Measures of environmental satisfaction, performance, work experience, and more along with whether the employee left the company or not.
 
 ### Methods
 
