@@ -8,13 +8,11 @@ df.drop('EmployeeCount', axis=1, inplace=True)        # Column has no relevant i
 print(f'Info and description of dataset:\n')
 print(df.info())
 print(f'------------------------------------------------------------\n\n')
-print(f'Print descriptive statistics. There are two many columns to fit on the screen so will temporarily remove\n'
-      f'limits to pandas display settings.\n')
+print(f'Print descriptive statistics.\n')
 print(df.describe().dropna(how='all').to_string())
 print(f'------------------------------------------------------------\n\n')
 
 # Print correlations
-print(f'Printing the correlations. There are two many columns to fit on the screen so will temporarily remove limits\n'
-      f'to pandas display settings.\n')
+print(f'Printing the correlations.\n')
 print(df.corr().dropna(how='all').to_string())
 print(f'------------------------------------------------------------\n\n')
