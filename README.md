@@ -17,7 +17,7 @@ Your repository should include the following:
 
 ## Research Question
 
-<b>"What are the most important factors predicting employee attrition/turnover?"</b>
+<b>"What are the most important factors predicting employee flight (attrition)?"</b>
 
 ### Abstract
 
@@ -35,7 +35,9 @@ Your repository should include the following:
 Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
 
 This is a fictional dataset created by IBM Data Scientists found on Kaggle and can be found [here](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset). 
-It holds 1470 employee records with various HR factors such as compensation, Demographics, Measures of environmental satisfaction, performance, work experience, and more. We can use this data to create a model to identify important factors that can predict employee flight which is a principal concern of Human Resource departments as it is typically very costly to replace employees. According to this article, the average cost to replace an employee is "20 percent of annual salary for midrange positions (earning $30,000 to $50,000 a year). For example, the cost to replace a $40k manager would be $8,000." according to one study.
+It holds 1470 employee records with various HR factors such as compensation, Demographics
+, Measures of environmental satisfaction, performance, work experience, and more. We can use this
+ data to create a model to identify important factors that can predict employee flight which is a principal concern of Human Resource departments as it is typically very costly to replace employees. According to [this article](https://www.peoplekeep.com/blog/bid/312123/employee-retention-the-real-cost-of-losing-an-employee), the average cost to replace an employee is "20 percent of annual salary for midrange positions (earning $30,000 to $50,000 a year). For example, the cost to replace a $40k manager would be $8,000." according to one study.
 
 ### Methods
 
