@@ -1,35 +1,23 @@
-"# CEBD1160-MyProject" 
-
-This project is part of course CEBD1160 Introduction to Big Data Technology from Concordia. 
-
-It's purpose is to use the dataset found in the link below to answer the question 
-<b>"What are the most important factors predicting employee attrition/turnover?"</b>
-
-Data:   
-<i>https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset</i>
-
-# cebd1160_project_template
-Instructions and template for final projects.
+# CEBD-1160: Employee Attrition
 
 | Name | Date |
 |:-------|:---------------|
-|Your name here | Completion date|
+|Daniel Goyer|TBD|
 
 -----
 
 ### Resources
 Your repository should include the following:
 
-- Python script for your analysis
-- Results figure/saved file
-- Dockerfile for your experiment
+- Python script for your analysis: `tbd.py`
+- Results figure/saved file: `tbd.py`
 - runtime-instructions in a file named RUNME.md
 
 -----
 
 ## Research Question
 
-1 sentence description of your research question.
+<b>"What are the most important factors predicting employee attrition/turnover?"</b>
 
 ### Abstract
 
@@ -40,9 +28,14 @@ Your repository should include the following:
 - action (how will we try to solve this problem/answer this question)
 - resolution (what did we end up producing)
 
+
+
 ### Introduction
 
 Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
+
+This is a fictional dataset created by IBM Data Scientists found on Kaggle and can be found [here](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset). 
+It holds 1470 employee records with various HR factors such as compensation, Demographics, Measures of environmental satisfaction, performance, work experience, and more. We can use this data to create a model to identify important factors that can predict employee flight which is a principal concern of Human Resource departments as it is typically very costly to replace employees. According to this article, the average cost to replace an employee is "20 percent of annual salary for midrange positions (earning $30,000 to $50,000 a year). For example, the cost to replace a $40k manager would be $8,000." according to one study.
 
 ### Methods
 
