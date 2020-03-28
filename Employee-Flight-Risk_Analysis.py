@@ -179,7 +179,7 @@ print(disp.confusion_matrix)
 
 # Save to file
 os.makedirs('plots', exist_ok=True)
-plt.savefig('plots/ConfusionMatrix.png')
+disp.figure_.savefig('plots/ConfusionMatrix.png')
 
 # Precision-Recall Curve
 # noinspection PyTypeChecker
@@ -192,4 +192,27 @@ plt.show()
 
 # Save to file
 os.makedirs('plots', exist_ok=True)
-plt.savefig('plots/Precision-Recall_curve.png')
+disp.figure_.savefig('plots/Precision-Recall_curve.png')
+
+# Feature Importance Chart
+# start by initializing a dataframe to hold results
+feature_importance_df = pd.DataFrame(columns=['Feature', 'Importance'])
+feature_importance_df['Feature'] = X_train.columns.values
+feature_importance_df['Importance'] = rf.feature_importances_
+
+# sort by importance
+feature_importance_df = feature_importance_df.sort_values('Importance', ascending=False)
+feature_importance_df.reset_index(drop=True, inplace=True)
+
+y_ticks = sorted(range(27), reverse=True)
+fig, ax = plt.subplots()
+ax.barh(y_ticks, feature_importance_df['Importance'], color='g')
+ax.set_yticklabels(feature_importance_df['Feature'])
+ax.set_yticks(y_ticks)
+ax.set_title("RF Feature Importance in explaining Flight Risk")
+fig.tight_layout()
+plt.show()
+
+# Save to file
+os.makedirs('plots', exist_ok=True)
+fig.savefig('plots/RF_FeatureRank.png')

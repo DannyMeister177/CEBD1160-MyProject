@@ -49,7 +49,7 @@ probability which is more useful as a model for HR departments to monitor risk d
 
 The scikit-learn documentation on the Random Forest algorithm can be found
 [here](https://scikit-learn.org/stable/modules/ensemble.html#random-forests).
-Basically, Random Forests create many (in this case 125) Decision Trees by a method called 
+Basically, Random Forests create many (in this case 120) Decision Trees by a method called 
 *bagging*, which involves taking the original training dataset of size n and randomly sampling 
 some part of the data of size n' *with replacement* and then repeating this m times creating 
 m different train sets. This has the effect of reducing the variance associated with any one 
