@@ -73,7 +73,7 @@ Another way to visualize the performance is looking at the trade off in Recall v
 
 ![Precision-Recall_curve](./plots/Precision-Recall_curve.png)
 
-We can see average precision is only 50% and the curve is quite low.
+We can see average precision is only 49% and the curve is quite low.
 
 That being said, the model did provide which features are most important in predicting attrition 
 with OverTime, MonthlyIncome and TotalWorkingYears being the most important.
