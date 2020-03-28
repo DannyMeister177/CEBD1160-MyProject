@@ -28,15 +28,15 @@ Your repository should include the following:
 - action (how will we try to solve this problem/answer this question)
 - resolution (what did we end up producing)
 
-Predicting employee flight is a principal concern of Human Resource departments as it is typically 
-very costly to replace employees. According to 
+Predicting employee flight (also known as Attrition or Churn) is a principal concern of Human 
+Resource departments as it is typically very costly to replace employees. According to 
 [this article](https://www.peoplekeep.com/blog/bid/312123/employee-retention-the-real-cost-of-losing-an-employee), 
-the average cost to replace an employee is "20 percent of annual salary for midrange positions 
+the average cost to replace an employee is <i>"20 percent of annual salary for midrange positions 
 (earning $30,000 to $50,000 a year). For example, the cost to replace a $40k manager would be 
-$8,000." according to one study. Using the dataset which has fictional employee data along with 
+$8,000."</i> according to one study. Using the dataset which has fictional employee data along with 
 attrition I attempted to determine which factors can help predict employee flight. I found it very 
-challenging as the data is significantly imbalanced (only 16% of employees left) and so 
-<b><i>RESULT TBD</i></b>
+challenging as the data is significantly imbalanced (only 16% of employees left) and also has quite
+a few features (49 columns once processed). 
 
 ### Introduction
 

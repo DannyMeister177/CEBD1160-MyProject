@@ -2,3 +2,4 @@ venv/*
 .idea/
 WA_Fn-UseC_-HR-Employee-Attrition.xlsx
 gi/
+/.ipynb_checkpoints/
