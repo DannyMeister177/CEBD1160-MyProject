@@ -29,8 +29,8 @@ $8,000."</i> according to one study. Using the dataset which has fictional emplo
 attrition I attempted to determine which factors can help predict employee flight. I found it very 
 challenging as the data is significantly imbalanced (only 16% of employees left) and also has quite
 a few features (49 columns once processed). The model produced was able to provide which factors are
- most likely to predict attrition but the performance was not up to the challenge but has potential 
- if more sophisticated methods are used to treat the imbalance.
+ most likely to predict attrition but the performance was not up to the challenge. However, it has 
+ potential if more sophisticated methods are used to treat the imbalance.
 
 ### Introduction
 
@@ -42,20 +42,22 @@ the employee left the company or not.
 
 ### Methods
 
-After exploring some other algorithms, I decided to use scikit-learn RandomForestClassifer for two
+After exploring some other algorithms, I decided to use scikit-learn's RandomForestClassifer for two
 reasons, 1) it provided a way to choose features that were important in prediction, and 2) it had a 
-method of predicting not only the outcome itself (attrition or no attrition) but also the 
-probability which is more useful as a model for HR departments to monitor risk dynamically.
+method of predicting not only the outcome itself (attrition or no attrition) but also employee
+flight probability which is more useful as a model for HR departments to monitor risk dynamically.
 
 The scikit-learn documentation on the Random Forest algorithm can be found
 [here](https://scikit-learn.org/stable/modules/ensemble.html#random-forests).
 Basically, Random Forests create many (in this case 120) Decision Trees by a method called 
 *bagging*, which involves taking the original training dataset of size n and randomly sampling 
-some part of the data of size n' *with replacement* and then repeating this m times creating 
-m different train sets. This has the effect of reducing the variance associated with any one 
-Decision Tree and consequently avoids over-fitting. An additional source of randomness involves 
-selecting only a random subset of features when creating any one decision node of each Decision Tree
- which is an example of a broader class of techniques called **ensemble learning**.
+some part of the data of size n' *with replacement* and then repeating this m times creating m 
+different train sets. The model then uses the majority vote of all the decision trees to determine 
+the classification of out-of-sample data points. This has the effect of reducing the variance 
+associated with any one Decision Tree and consequently avoids over-fitting. An additional source of 
+randomness involves selecting only a random subset of features when creating any one decision node 
+of each Decision Tree which is an example of a broader class of techniques called 
+**ensemble learning**.
 
 ### Results
 I chose the metric of F-Beta with Beta = 1.75 as I wanted to weigh recall as more important than 
@@ -64,8 +66,8 @@ than a false positive.
 
 Applying the model to the test set, it achieved F-Beta = 0.616 and Recall = 0.754 (of all employees 
 who did leave in the test set, the model predicted 75.4% correctly). The lower F-Beta is a 
-reflection of precision = 0.39. We can see this in the confusion matrix below where of 95 true 
-positives, the model incorrectly predicted 59 of them to be negatives.
+reflection of precision = 0.39. We can see this in the confusion matrix below where of 109 samples 
+predicted to be true, the model incorrectly predicted 66 of them since they were in fact negatives.
 
 ![Confusion Matrix](./plots/ConfusionMatrix.png)
 
@@ -76,7 +78,11 @@ Another way to visualize the performance is looking at the trade off in Recall v
 We can see average precision is only 49% and the curve is quite low.
 
 That being said, the model did provide which features are most important in predicting attrition 
-with OverTime, MonthlyIncome and TotalWorkingYears being the most important.
+with OverTime, MonthlyIncome and YearsAtCompany being the three most important (see figure below. 
+The interpretation of this could be that Employees who have a lot of overtime are being overworked 
+and coupled with a low MonthlyIncome may feel undervalued and would be more incentivized to look 
+for another job. Finally, those with less experience may be more willing to take risks in changing 
+jobs to look for more varied experience in their careers.
 
 ![Feature Importance](./plots/RF_FeatureRank.png)
 
