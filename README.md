@@ -7,7 +7,6 @@
 -----
 
 ### Resources
-Your repository should include the following:
 
 - Python script for your analysis: `Employee-Flight-Risk_Analyis.py`
 - Results figure/saved file: `plots/`
